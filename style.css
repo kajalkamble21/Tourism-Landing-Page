@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: multiply;
+}
+
+.header .menu-item {
+    display: flex;
+    gap: 30px;
+}
+
+.header .menu-item a {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.header .menu-item .home {
+    border-bottom: 2px solid purple;
+}
+
+.header .menu-item a:hover {
+    color: orange;
+}
+
+.bg-sec {
+    background-image: url("https://images.pexels.com/photos/939729/pexels-photo-939729.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.bg-sec .txt {
+    text-align: center;
+    color: white;
+}
+
+.bg-sec .srch {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-sec .srch input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.bg-sec .srch button {
+    width: 80%;
+    height: 40px;
+    background-color: orange;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.bg-sec .srch button:hover {
+    background-color: rgb(236, 183, 83);
+}
+
+.offer {
+    background-color: whitesmoke;
+    padding: 30px;
+    text-align: center;
+}
+
+.offer .txt {
+    margin-bottom: 20px;
+}
+
+.offer .main-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offer .main-con .box {
+    background: white;
+    width: 280px;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 30px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.offer .main-con .box img {
+    width: 100%;
+    height: 186px;
+    object-fit: cover;
+}
+
+.offer .main-con .box .txt p {
+    margin-bottom: 10px;
+}
+
+.offer .main-con .box .txt p span {
+    color: red;
+    font-weight: bold;
+}
+
+.offer .main-con .box .btn {
+    margin-top: 7px;
+}
+
+.offer .main-con .box .btn button {
+    padding: 8px 20px;
+    border: none;
+    background: orange;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.offer .main-con .box .btn button:hover {
+    background-color: whitesmoke;
+    border: 1px solid orange;
+}
+
+.dest {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.dest .txt {
+    margin-bottom: 20px;
+}
+
+.contact {
+    background-color: whitesmoke;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact .txt {
+    margin-bottom: 20px;
+}
+
+.contact .main-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact .main-con .box,
+.contact .main-con .box4 {
+    background: white;
+    width: 280px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: transform 0.3s ease;
+}
+
+.contact .main-con .box:hover,
+.contact .main-con .box4:hover {
+    transform: translateY(-10px);
+}
+
+.contact .main-con .box i {
+    font-size: 32px;
+    color: rgb(5, 5, 8);
+}
+
+.contact .main-con .box p {
+    margin-top: 10px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    
+}
+
+.contact .main-con .box4 p {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: rgb(6, 6, 7);
+}
+
+.contact .main-con .box4 .social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact .main-con .box4 .social i {
+    font-size: 35px;
+    color: rgb(14, 14, 15);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.contact .main-con .box4 .social i:hover {
+    transform: scale(1.2);
+}
+
+.footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP._BrnkSLTKOJ-mu1HKPibtwHaEK&pid=Api&P=0&h=180");
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__data {
+    flex: 1 1 10%;
+    padding: 5%;
+}
+
+.footer__data ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer__data ul li {
+    list-style: none;
+}
+
+.footer__title,
+.footer__subtitle {
+    margin-bottom: 30%;
+}
+
+.footer__link {
+    color: black;
+    text-decoration: none;
+}
+
+.footer__rights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(4, 4, 5);
+    color: aliceblue;
+    height: 20px;
+}
+
+.footer__rights p {
+    text-align: center;
+    position: relative;
+    animation: slideFromRight 1s linear forwards;
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.contact .main-con .box4 .social i {
+    font-size: 35px;
+    color: black; 
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.contact .main-con .box4 .social i:hover {
+    transform: scale(1.2);
+}
+
+.follow{
+    color: black;
+}
